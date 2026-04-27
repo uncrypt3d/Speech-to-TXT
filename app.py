@@ -4,10 +4,10 @@ model = WhisperModel("large", device="cpu", compute_type="int8")
 
 segments, info = model.transcribe(
     "teksti.mp3",
-    language="fi"
+    language="fi" 
 )
 
-print("\n--- LITTEROITU TEKSTI ---\n")
+print("\n--- TXT ---\n")
 
 full_text = ""
 for segment in segments:
