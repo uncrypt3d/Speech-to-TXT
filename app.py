@@ -3,8 +3,8 @@ from faster_whisper import WhisperModel
 model = WhisperModel("large", device="cpu", compute_type="int8")
 
 segments, info = model.transcribe(
-    "teksti.mp3",
-    language="fi" 
+    "teksti.mp3", #mp3 file (must be at same dir)
+    language="fi" #set this to any language you want
 )
 
 print("\n--- TXT ---\n")
